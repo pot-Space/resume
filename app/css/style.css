@@ -1,0 +1,177 @@
+body {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.body-bg {
+    background: rgb(45, 107, 78);
+    background-size: cover;
+}
+
+.color-grey {
+    color: #303030;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'IBM Plex Serif', serif;
+}
+
+a {
+	position: relative;
+	color: rgb(72, 170, 124);
+	cursor: pointer;
+	line-height: 1; 
+	text-decoration: none;
+
+}
+
+a:after {
+	display: block;
+	position: absolute;
+	left: 0;
+	width: 0;
+	height: 1px; 
+	background-color: rgb(72, 170, 124);
+	content: "";
+	transition: width 0.3s ease-out;
+}
+
+a:hover:after, a:focus:after {
+	width: 100%;
+}
+
+
+span:hover {
+    color: rgb(72, 170, 124);
+}
+
+li::selection, p::selection, h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, i::selection, span::selection {
+    background: rgb(72, 170, 124);
+}
+
+.cv-header, .profile, .experience, .company-name {
+    font-family: 'IBM Plex Serif', serif;
+}
+
+.cv {
+    margin-top: 50px;
+    border: 1px solid #4b4b4b;
+    box-shadow: 1px 1px 15px black;
+}
+
+.cv-left {
+    background: #303030;
+    min-height: 30vh;
+    color: #fff;
+}
+
+.cv-right {
+    background: #fff;
+    min-height: 30vh;
+    color: #131313;
+}
+
+.photo-block {
+
+}
+
+.cv-left a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.cv-left a:hover {
+    text-decoration: none;
+}
+
+.cv-left ul {
+    line-height: 175%;
+    padding-left: 30px;
+}
+
+.cv-left ul.contacts-block {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.cv-left .address {
+    font-style: italic;
+}
+
+article {
+    padding: 20px;
+}
+
+.company-name {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+.company-name i{
+    font-size: .8rem;
+    font-family: Arial, sans-serif;
+    text-transform: none;
+}
+
+.job-title {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.lines {
+    overflow: hidden;
+}
+
+.lines::before, .lines::after {
+    content: "";
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 3px;
+    background: #4b4b4b;
+    border: 1px solid #fff;
+    vertical-align: middle;
+}
+
+.lines::before {
+    margin-left: -100%;
+}
+
+.lines::after {
+    margin-right: -100%;
+}
+
+@media (max-width: 991.98px){
+    .cv-left h1, .cv-left h2,.cv-left h3,.cv-left h4 {
+        font-size: 1.3rem;
+    }
+    .cv-left ul {
+        line-height: 150%;
+        padding-left: 25px;
+    }
+}
+
+@media (max-width: 575.98px){
+    .cv {
+        margin-top: 0;
+    }
+    .photo-block img {
+        display: block;
+        max-width: 50%;
+        margin: 20px auto;
+    }
+}
+
+.collapsible {
+    cursor: pointer;
+}
+
+.active, .collapsible:hover {
+    color: rgb(72, 170, 124);
+}
+
+.content {
+    display: none;
+    overflow: hidden;
+}
